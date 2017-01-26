@@ -1,0 +1,41 @@
+---
+# Base URL for Github pages"
+baseUrl: "http://j0rdn.github.io/"
+# Html lang attribute
+languageCode: "en-US"
+# Homepage Title
+title: "Code And Critique"
+# Enable robots.txt
+enableRobotsTXT: true
+# After Dark http://themes.gohugo.io/after-dark/
+theme: "after-dark"
+# Permalink for archived posts.
+permalinks:
+    post: /:year/:month/:title
+    paginate: 5
+params:
+    description: "Building a better future with misguided enthusiasm."
+    author: "Jordan E."
+    GitHubUser: "j0rdn"
+    powered_by: false
+    show_menu: true
+menu:
+    main:
+        name: "About"
+        weight: 0
+        identifier: "About"
+        url: "/a/"
+    main:
+        name: "Code"
+        weight: 1
+        identifier: "code"
+        url: "/x/"
+    main:
+        name: "Critique"
+        weight: 2
+        identifier: "critique"
+        url: "/q/"
+publishDir: "docs"
+disable404: true
+enableEmoji : true
+...
